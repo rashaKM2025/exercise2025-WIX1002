@@ -8,14 +8,17 @@
  * @author acer
  */
 import java.util.Scanner;
-public class w05e02e {
-    public static void main(String[] args){
+public class w05e02e{
+
+    public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number (0 to stop): ");
-        int number = sc.nextInt();
+        int sum = 0;
+        int number;
         do {
-        System.out.println("Enter a number (0 to stop): ");
-         number = sc.nextInt();
+        System.out.print("Enter a number (0 to stop): ");
+        number = sc.nextInt();
+        sum += number;
         } while (number != 0);
+        System.out.println("The sum is: "+ sum);
     }
 }
